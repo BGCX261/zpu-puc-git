@@ -51,6 +51,7 @@ namespace DatabaseProject
             {
                 AdminApp adminapp = new AdminApp();
                 adminapp.Show();
+                Login.logincorrect = false;
             }
         }
 
