@@ -45,6 +45,8 @@ namespace DatabaseProject
             panelItemD.Enabled = false;
             panelBook.Enabled = false;
             panelCD.Enabled = false;
+            radioButtonBook.Enabled = false;
+            radioButtonCD.Enabled = false;
         }
         private void buttonChange_Click(object sender, EventArgs e)
         {
