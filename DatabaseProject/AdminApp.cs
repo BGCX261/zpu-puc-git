@@ -91,6 +91,7 @@ namespace DatabaseProject
                                 cmdInsertItem.ExecuteNonQuery();
                                 cmdInsertItem.Dispose();
                                 MessageBox.Show("Add this customer successfully");
+                                freshtext();
                             }
 
                         }
@@ -191,6 +192,7 @@ namespace DatabaseProject
                                 cmdInsertItem.ExecuteNonQuery();
                                 cmdInsertItem.Dispose();
                                 MessageBox.Show("Update customer information successfully");
+                                freshtext();
                             }
 
                         }
