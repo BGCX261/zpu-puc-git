@@ -42,14 +42,14 @@ namespace DatabaseProject
                 conn.Open();
                 try
                 {
-                    string strCheck = "SELECT * FROM logininfo WHERE [ID] = '" + this.textBoxID.Text + "'";
+                    string strCheck = "SELECT * FROM employee WHERE eID = " + int.Parse(this.textBoxID.Text.ToString()) ;
                     OleDbCommand cmdCheck = new OleDbCommand(strCheck, conn);
                     OleDbDataReader reader;
                     reader = cmdCheck.ExecuteReader(); //execute query and get according DataReader
 
                     if (reader.Read())
                     {
-                        if (this.textBoxPwd.Text ==reader["password"].ToString())
+                        if (this.textBoxPwd.Text ==reader["epassword"].ToString())
                         {
                             logincorrect = true;
                             this.Close();
