@@ -94,11 +94,15 @@ namespace DatabaseProject
                             reader = cmdCheck.ExecuteReader(); //execute query and get according DataReader
                             
                             //if we have to assign the orderID text here again?
-                            if (reader.Read()) ;
-                            this.textBoxVendorID.Text = reader["vID"].ToString();
-                            this.textBoxOrderDate.Text = reader["oDate"].ToString();
-                            this.textBoxOrderItemID.Text = reader["itemID"].ToString();
-                            this.textBoxOrderItemQuan.Text = reader["itemQ"].ToString();
+                            if (!reader.Read())
+                                MessageBox.Show("This order does not exist!");
+                            else
+                            {
+                                this.textBoxVendorID.Text = reader["vID"].ToString();
+                                this.textBoxOrderDate.Text = reader["oDate"].ToString();
+                                this.textBoxOrderItemID.Text = reader["itemID"].ToString();
+                                this.textBoxOrderItemQuan.Text = reader["itemQ"].ToString();
+                            }
                         }
                         catch (Exception ee)
                         {
