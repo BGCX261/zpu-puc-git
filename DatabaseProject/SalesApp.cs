@@ -21,9 +21,20 @@ namespace DatabaseProject
 
         private void buttonSaleReport_Click(object sender, EventArgs e)
         {
-            this.Close();
-            SalesReport salesreport = new SalesReport();
-            salesreport.Show();
+            Login login = new Login();
+            login.ShowDialog();
+
+            if (Login.logincorrect == true && Login.notmanager == true)
+            {
+                SalesReport salesreport = new SalesReport();
+                salesreport.Show();
+                Login.logincorrect = false;
+            }
+            else
+            {
+                MessageBox.Show("No permission to access!");
+            }
+
         }
 
         private void buttonReturn_Click(object sender, EventArgs e)
