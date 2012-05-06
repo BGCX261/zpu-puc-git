@@ -111,64 +111,73 @@ namespace DatabaseProject
                         break;
 
                     case Place:
-                        try
+                        if (this.textBoxOrderDate.Text == "" || this.textBoxOrderID.Text == ""
+                           || this.textBoxOrderItemID.Text == "" || this.textBoxVendorID.Text == ""
+                           || this.textBoxOrderItemQuan.Text == "")
                         {
-                            string strCheck = "SELECT * FROM [order] WHERE oID =" + this.textBoxOrderID.Text;
-                            OleDbCommand cmdCheck = new OleDbCommand(strCheck, conn);
-                            OleDbDataReader reader;
-                            reader = cmdCheck.ExecuteReader(); //execute query and get according DataReader
-                            if (reader.Read())
+                            MessageBox.Show("Please type the full information!");
+                        }
+                        else
+                        {
+                            try
                             {
-                                MessageBox.Show("This order already exists!");
-                                reader.Close();
+                                string strCheck = "SELECT * FROM [order] WHERE oID =" + this.textBoxOrderID.Text;
+                                OleDbCommand cmdCheck = new OleDbCommand(strCheck, conn);
+                                OleDbDataReader reader;
+                                reader = cmdCheck.ExecuteReader(); //execute query and get according DataReader
+                                if (reader.Read())
+                                {
+                                    MessageBox.Show("This order already exists!");
+                                    reader.Close();
+                                }
+                                else
+                                {
+                                    reader.Close();
+                                    string strInsertItem = "INSERT INTO [order] VALUES ("
+                                        + int.Parse(this.textBoxOrderID.Text) + ","
+                                        + int.Parse(this.textBoxVendorID.Text) + ",'"
+                                        + this.textBoxOrderDate.Text + "',"
+                                        + int.Parse(this.textBoxOrderItemID.Text) + ","
+                                        + int.Parse(this.textBoxOrderItemQuan.Text) + ")";
+                                    OleDbCommand cmdInsertItem = new OleDbCommand(strInsertItem, conn);
+                                    cmdInsertItem.ExecuteNonQuery();
+                                    cmdInsertItem.Dispose();
+
+
+                                    //check the item table for the item quantity
+                                    bool itemexist = checkitemexist(int.Parse(this.textBoxOrderItemID.Text), conn);
+                                    if (!itemexist)
+                                    {
+                                        MessageBox.Show("We can only place an item which is existed!");
+                                    }
+                                    else
+                                    {
+                                        string stritemquan = "SELECT * FROM item WHERE iID=" + int.Parse(this.textBoxOrderItemID.Text);
+
+                                        OleDbCommand quancheck = new OleDbCommand(stritemquan, conn);
+
+                                        OleDbDataReader quanreader = quancheck.ExecuteReader();
+                                        if (quanreader.Read()) ;
+                                        int itemquan = int.Parse(quanreader["itemQ"].ToString());
+                                        quancheck.Dispose();
+
+                                        int itemnewquan = int.Parse(this.textBoxOrderItemQuan.Text);
+                                        int newquan = itemquan + itemnewquan;
+
+                                        string strnewitemquan = "UPDATE item SET itemQ=" + newquan + " WHERE iID=" + int.Parse(this.textBoxOrderItemID.Text);
+                                        OleDbCommand newquanquery = new OleDbCommand(strnewitemquan, conn);
+                                        OleDbDataReader newquanreader = newquanquery.ExecuteReader();
+                                        newquanquery.Dispose();
+                                    }
+                                    MessageBox.Show("Add this order successfully");
+
+                                }
                             }
-                            else
+                            catch (Exception ee)
                             {
-                                reader.Close();
-                                string strInsertItem = "INSERT INTO [order] VALUES (" 
-                                    + int.Parse(this.textBoxOrderID.Text) + ","
-                                    + int.Parse(this.textBoxVendorID.Text) + ",'"
-                                    + this.textBoxOrderDate.Text+ "',"
-                                    + int.Parse(this.textBoxOrderItemID.Text) + ","
-                                    + int.Parse(this.textBoxOrderItemQuan.Text) + ")";
-                                OleDbCommand cmdInsertItem = new OleDbCommand(strInsertItem, conn);
-                                cmdInsertItem.ExecuteNonQuery();
-                                cmdInsertItem.Dispose();
-
-
-                                //check the item table for the item quantity
-                                bool itemexist = checkitemexist(int.Parse(this.textBoxOrderItemID.Text), conn);
-                                if (!itemexist)
-                                {
-                                    MessageBox.Show("We can only place an item which is existed!");
-                                }
-                                else 
-                                {
-                                    string stritemquan = "SELECT * FROM item WHERE iID=" + int.Parse(this.textBoxOrderItemID.Text);
-                                      
-                                    OleDbCommand quancheck = new OleDbCommand(stritemquan, conn);
- 
-                                    OleDbDataReader quanreader = quancheck.ExecuteReader();
-                                    if (quanreader.Read()) ;
-                                    int itemquan = int.Parse(quanreader["itemQ"].ToString());
-                                    quancheck.Dispose();
-
-                                    int itemnewquan=int.Parse(this.textBoxOrderItemQuan.Text);
-                                    int newquan=itemquan+itemnewquan;
-
-                                    string strnewitemquan = "UPDATE item SET itemQ="+newquan+" WHERE iID=" + int.Parse(this.textBoxOrderItemID.Text);
-                                    OleDbCommand newquanquery = new OleDbCommand(strnewitemquan, conn);
-                                    OleDbDataReader newquanreader = newquanquery.ExecuteReader();
-                                    newquanquery.Dispose();
-                                }
-                                MessageBox.Show("Add this order successfully");
-
+                                throw (new Exception("Database error:" + ee.Message));
                             }
                         }
-                        catch (Exception ee)
-                        {
-                            throw (new Exception("Database error:" + ee.Message));
-                        }    
                         break;
 
                     case Change:
@@ -254,7 +263,7 @@ namespace DatabaseProject
                                 MessageBox.Show("Have sold some this item!");
                             else
                             {
-                                string streupitemq = "UPDATE item SET itemQ=" + newq;
+                                string streupitemq = "UPDATE item SET itemQ=" + newq + " WHERE iID=" + orderitemid;
                                 OleDbCommand cmdupdateItemQ = new OleDbCommand(streupitemq, conn);
                                 cmdupdateItemQ.ExecuteNonQuery();
                                 cmdupdateItemQ.Dispose();

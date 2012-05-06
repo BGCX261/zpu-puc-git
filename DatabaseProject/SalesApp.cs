@@ -18,7 +18,6 @@ namespace DatabaseProject
             
         }
 
-
         private void buttonSaleReport_Click(object sender, EventArgs e)
         {
             Login login = new Login();
@@ -44,9 +43,11 @@ namespace DatabaseProject
 
         private void buttonApply_Click(object sender, EventArgs e)
         {
-            if (this.textBoxSid.Text == "")
+            if (this.textBoxSid.Text == "" || this.textBoxCid.Text == ""
+                || this.textBoxEid.Text == "" || this.textBoxItemID.Text == ""
+                || this.textBoxVendorID.Text == "" || this.textBoxItemQuantity.Text == "")
             {
-                MessageBox.Show("Must have a Sale ID");
+                MessageBox.Show("Must have to type enouth information");
             }
             else
             {

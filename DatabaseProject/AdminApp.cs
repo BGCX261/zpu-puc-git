@@ -44,6 +44,7 @@ namespace DatabaseProject
 
         private void buttonEinfo_Click(object sender, EventArgs e)
         {
+            //if want to change the employee's information, it needs manager permission
             status = EInfo;
             freshtext();
             Login login = new Login();

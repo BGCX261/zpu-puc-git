@@ -37,6 +37,7 @@ namespace DatabaseProject
             panelBook.Enabled = true;
             panelCD.Enabled = false;
         }
+
         private void buttonDelete_Click(object sender, EventArgs e)
         {
             status = Delete;
@@ -48,6 +49,7 @@ namespace DatabaseProject
             radioButtonBook.Enabled = false;
             radioButtonCD.Enabled = false;
         }
+
         private void buttonChange_Click(object sender, EventArgs e)
         {
             status = Change;
@@ -57,6 +59,7 @@ namespace DatabaseProject
             panelBook.Enabled = true;
             panelCD.Enabled = false;
         }
+
         private void buttonQuery_Click(object sender, EventArgs e)
         {
             status = Query;
@@ -83,6 +86,7 @@ namespace DatabaseProject
             this.panelCD.Enabled = true;
             this.panelBook.Enabled = false;
         }
+
         private void cleanTextbox()
         {
             this.textBoxID.Text = "";
@@ -100,11 +104,6 @@ namespace DatabaseProject
             this.textBoxProducer.Text = "";
             this.radioButtonBook.Select();
         }
-
-        //private void labID_Click(object sender, EventArgs e)
-        //{
-
-        //}
 
         private void buttonApply_Click(object sender, EventArgs e)
         {
@@ -248,6 +247,7 @@ namespace DatabaseProject
                             }
                         }
                         break;
+
                     case Query:
                         string strQueryItem = "SELECT * FROM item WHERE iID ="+ int.Parse(this.textBoxID.Text);
                         OleDbCommand cmdQueryItem = new OleDbCommand(strQueryItem, conn);
@@ -314,9 +314,5 @@ namespace DatabaseProject
         {
 
         }
-        
-        
-
-      
     }
 }
