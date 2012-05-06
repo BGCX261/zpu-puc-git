@@ -23,7 +23,7 @@ namespace DatabaseProject
             Login login = new Login();
             login.ShowDialog();
 
-            if (Login.logincorrect == true && Login.notmanager == true)
+            if (Login.logincorrect == true && Login.ismanager == true)
             {
                 SalesReport salesreport = new SalesReport();
                 salesreport.Show();

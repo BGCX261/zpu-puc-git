@@ -13,7 +13,7 @@ namespace DatabaseProject
     public partial class Login : Form
     {
         public static bool logincorrect= false;
-        public static bool notmanager = false;
+        public static bool ismanager = false;
         public Login()
         {
             InitializeComponent();
@@ -50,22 +50,22 @@ namespace DatabaseProject
 
                     if (reader.Read())
                     {
-                        if ((this.textBoxPwd.Text ==reader["epassword"].ToString())&&(reader["jobtitle"].ToString()!="manager"))
-                        {
-                            logincorrect    =   true;
-                            notmanager      =   false;
-                            this.Close();
-                            reader.Close();
-                        }
-                        else if(this.textBoxPwd.Text !=reader["epassword"].ToString())
-                        {
+                        if (this.textBoxPwd.Text !=reader["epassword"].ToString())
+                        {                            
                             MessageBox.Show("Wrong Password!");
                             freshtext();
+                        }
+                        else if(reader["jobtitle"].ToString()=="manager")
+                        {
+                            logincorrect    =   true;
+                            ismanager = true;
+                            this.Close();
+                            reader.Close();
                         }
                         else
                         {
                             logincorrect    = true;
-                            notmanager      = true;
+                            ismanager = false;
                             this.Close();
                             reader.Close();
                          }
