@@ -1,0 +1,83 @@
+D:\courseware and tools\Database\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.exe
+D:\courseware and tools\Database\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.pdb
+D:\courseware and tools\Database\DatabaseProject\DatabaseProject\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\courseware and tools\Database\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Form1.resources
+D:\courseware and tools\Database\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Properties.Resources.resources
+D:\courseware and tools\Database\DatabaseProject\DatabaseProject\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\courseware and tools\Database\DatabaseProject\DatabaseProject\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\courseware and tools\Database\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.exe
+D:\courseware and tools\Database\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.pdb
+C:\Users\zpu\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.exe
+C:\Users\zpu\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.pdb
+C:\Users\zpu\Desktop\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.exe
+C:\Users\zpu\Desktop\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.pdb
+C:\Users\zpu\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\zpu\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Form1.resources
+C:\Users\zpu\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Item_Application.resources
+C:\Users\zpu\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Properties.Resources.resources
+C:\Users\zpu\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\zpu\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\zpu\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.AdminApp.resources
+C:\Users\zpu\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.OrderingApp.resources
+C:\Users\zpu\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.SalesApp.resources
+C:\Users\Fornever1234\Desktop\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.exe
+C:\Users\Fornever1234\Desktop\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.pdb
+C:\Users\Fornever1234\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Fornever1234\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.AdminApp.resources
+C:\Users\Fornever1234\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Form1.resources
+C:\Users\Fornever1234\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Item_Application.resources
+C:\Users\Fornever1234\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.OrderingApp.resources
+C:\Users\Fornever1234\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Properties.Resources.resources
+C:\Users\Fornever1234\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.SalesApp.resources
+C:\Users\Fornever1234\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.SalesReport.resources
+C:\Users\Fornever1234\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Fornever1234\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Fornever1234\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.exe
+C:\Users\Fornever1234\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.pdb
+E:\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.exe
+E:\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.pdb
+E:\DatabaseProject\DatabaseProject\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.AdminApp.resources
+E:\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Form1.resources
+E:\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Item_Application.resources
+E:\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Login.resources
+E:\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.OrderingApp.resources
+E:\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Properties.Resources.resources
+E:\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.SalesApp.resources
+E:\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.SalesReport.resources
+E:\DatabaseProject\DatabaseProject\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\DatabaseProject\DatabaseProject\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.exe
+E:\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.pdb
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.exe
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.pdb
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.exe
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.pdb
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.AdminApp.resources
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Form1.resources
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Item_Application.resources
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Login.resources
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.OrderingApp.resources
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Properties.Resources.resources
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.SalesApp.resources
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.SalesReport.resources
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Course\Database Systems\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Report.resources
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.exe
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\bin\Debug\DatabaseProject.pdb
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.AdminApp.resources
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Form1.resources
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Item_Application.resources
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Login.resources
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.OrderingApp.resources
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Properties.Resources.resources
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.Report.resources
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.SalesApp.resources
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.SalesReport.resources
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.exe
+C:\Users\QM\Desktop\DatabaseProject\DatabaseProject\obj\x86\Debug\DatabaseProject.pdb
