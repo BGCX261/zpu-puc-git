@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+	int i=-20;
+	unsigned j=10;
+	int k=i+j;
+	printf("%d\n",k);
+	return 0;
+}
